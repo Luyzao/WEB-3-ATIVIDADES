@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-<?php include "funcoes2.php"?>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -8,17 +7,13 @@
     <title>Document</title>
 </head>
 <body>
-<?php
-
-
-$nome = $_POST["name"];
-$idade = $_POST["idade"];
-
-?>
-
-<p>Oi <?php echo $_POST["name"];?>.</p>
-<p>Você tem <?php echo $_POST["idade"];?></p>
-
-<?php verificaidade($idade); ?>
+    <?php
+    
+    $texto = "<img src=https://pm1.narvii.com/6450/db84a8b5b60e3634abc974dfed02b283746c778a_hq.jpg>";
+    $novo_texto = htmlspecialchars($texto);
+    
+    echo $texto;
+    echo $novo_texto;
+    ?>
 </body>
 </html>

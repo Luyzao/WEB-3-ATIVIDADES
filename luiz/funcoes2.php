@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-<?php include "funcoes2.php"?>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -8,17 +7,16 @@
     <title>Document</title>
 </head>
 <body>
-<?php
+    <?php
+    
+    function verificaidade($idade){
+        if($idade >= 18){
+            echo "Maior de idade";
+        }else{
+            echo "Menbr de idade";
+        }
+    }
 
-
-$nome = $_POST["name"];
-$idade = $_POST["idade"];
-
-?>
-
-<p>Oi <?php echo $_POST["name"];?>.</p>
-<p>Você tem <?php echo $_POST["idade"];?></p>
-
-<?php verificaidade($idade); ?>
+    ?>
 </body>
 </html>
